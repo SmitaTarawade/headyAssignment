@@ -1,0 +1,60 @@
+@import "../../styles/variables.scss";
+
+footer {
+    background: $mainBgYellow;
+    margin-left: 50px;    
+    .newsletter input {
+        border: none;
+        outline: none;
+        background: none;
+        border-bottom: 1px solid #3333331f;
+        @include border("bottom", 1px, $borderBlack);
+        text-align: center;
+        padding: 20px;
+        width: 40%;
+        min-width: 335px;
+        font-size: 26px;
+        font-weight: bold;
+        color: #000;
+        text-transform: capitalize;
+    }
+    
+    .footer2 {
+        @include border("top", 1px, $borderBlack);               
+        .social-icons-wrapper{
+            .social-icons {
+                float:right;
+                @media only screen and (max-width: $screenSize) {            
+                    float: none !important;
+                }
+            }
+            @media only screen and (max-width: $screenSize) {            
+                text-align: center;
+            } 
+        }        
+    }
+
+    .footer-links {
+        li {       
+            margin-right: 30px;                 
+            &.active, &:hover{
+                @include activeLink(0%, 50%, 50%, 100%, $activeLinkFooter);
+            }
+
+            @media screen and (max-width: $screenSize) {
+                display: block !important;
+		        max-width: 120px;
+        		margin: 10px auto 15px;
+
+            }
+        } 
+        
+        @media screen and (max-width: $screenSize) {
+            text-align: center;
+        }
+        
+    }
+    @media screen and (max-width: $screenSize) {
+        margin-left: 0;
+    }
+}

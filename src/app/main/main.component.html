@@ -1,0 +1,108 @@
+    <section class="details bg-white m50 p50">
+        <div class="row no-margin">
+            <div class="col-sm-7 details-img">
+                <img src="../../assets/img/desktop.jpg">
+            </div>
+            <div class="col-sm-5 details">
+                <h2 class="no-margin">Nude sofa</h2>
+                <div class="rating"><span class="stars"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></span>
+                <span class="rating"> 4.31 </span></div>
+                <div class="price p20"><span class="actual-price">$ 456</span><span class="discounted-price">$ 123</span></div>
+                <div class="detail-info">
+                    <hr class="no-margin">
+                    <ul class="p20 no-margin ml20">
+                        <li class="p5"><b class="text-uppercase"> Assembly : </b><span>Carpenter assembly</span></li>
+                        <li class="p5"><b class="text-uppercase"> Assembly : </b><span>Carpenter assembly</span></li>
+                    </ul>
+                    <hr class="no-margin">
+                    <div class="detail-special row no-margin">
+                        <div class="special col-sm-5">
+                            <span class="special-img"><i class="fa fa-truck" aria-hidden="true"></i></span>
+                            <span class="special-text text-uppercase">Same day dispact</span>
+                        </div>
+                        <div class="special col-sm-5">												
+                            <span class="special-img"><i class="fa fa-truck" aria-hidden="true"></i></span>
+                            <span class="special-text text-uppercase">Same day dispact</span>
+                        </div>
+                    </div>
+                    <div class="add-to-cart p50">
+                        <input type="number">
+                        <button type="button" class="btn btn-md text-uppercase">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="description">
+        <div class="description1 row no-margin p50">
+            <div class="col-md-9 col-sm-8 pull-right col-xs-12">
+                <img src="../../assets/img/sofa2.jpg">
+                <h3 class="text-uppercase">hsd kej eoir oeir woeir</h3>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-12 description-details">								
+            <p>Lorem ipsum ksdjf sofi sodfk skdjajsd aijd sfjloj ij Lorem ipsum ksdjf sofi sodfk skdjajsd aijd sfjloj ij Lorem ipsum ksdjf sofi sodfk skdjajsd aijd sfjloj ij Lorem ipsum ksdjf sofi sodfk skdjajsd aijd sfjloj ij dLorem ipsum ksdjf sofi sodfk skdjajsd aijd sfjloj ij iLorem ipsum ksdjf sofi sodfk skdjajsd aijd sfjloj ij </p><p>Lorem ipsum ksdjf sofi sodfk skdjajsd aijd sfjloj ij Lorem ipsum ksdjf sofi sodfk skdjajsd aijd sfjloj ij Lorem ipsum ksdjf sofi sodfk skdjajsd aijd sfjloj ij Lorem ipsum ksdjf sofi sodfk skdjajsd aijd sfjloj ij dLorem ipsum ksdjf sofi sodfk skdjajsd aijd sfjloj ij iLorem ipsum ksdjf sofi sodfk skdjajsd aijd sfjloj ij </p><p>Lorem ipsum ksdjf sofi sodfk skdjajsd aijd sfjloj ij Lorem ipsum ksdjf sofi</p></div>								
+        </div>							
+    </section>						
+    <section class="description">
+        <div class="description3 row no-margin p50">
+            <div class="col-md-12 col-sm-12 pull-right col-xs-12">
+                <div><img src="../../assets/img/sofa2.jpg"></div>
+                <h3 class="text-uppercase text-center">hsd kej eoir oeir woeir</h3>
+            </div>
+        </div>
+    </section>
+    <section class="description description2">
+        <div class="description2 row no-margin p50">
+            <div class="col-md-11 col-sm-11 description-wrapper pull-right col-xs-11">
+                <img src="../../assets/img/sofa2.jpg" class="img-big">
+                <img src="../../assets/img/sofa1.jpg" class="img-small">
+                <button class="button btn btn-lg download text-uppercase">Download pdf</button>
+            </div>
+            <div class="col-md-1 col-sm-1 col-xs-1 description-details hidden-xs">
+                <p class="text-uppercase">Suggested Accomodation</p>									
+            </div>								
+        </div>							
+    </section>						
+    <section class="reviews">
+        <h3><span class="number">23</span> reviews for Nude Sofa</h3>
+        <div class="avg-rating p20">
+            <span class="stars"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></span>
+            <span class="rating"> 4.31 </span>
+            <span class="total-reviews">(62 reviews)</span>
+        </div>
+        <div class="row all-reviews p50 no-margin">
+            <div *ngFor="let review of reviews" class="col-sm-12 mb25">
+                <div class="col-sm-3 review-person">
+                    <div class="user-img  hidden-xs col-sm-3 col-sm-offset-1">
+                        <img src="{{review.img}}">
+                    </div>
+                    <div class="col-sm-7 col-xs-12 no-padding">
+                        <div class="user-name">{{review.name}}</div>
+                        <div class="review-date">{{review.date}}</div>
+                    </div>
+                </div>
+                <div class="col-sm-9 review-comment">
+                    <div class="review-title">{{review.title}}</div>
+                    <div class="review-rating"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></div>
+                    <div class="comment">{{review.description}}</div>
+                </div>
+            </div>            
+        </div>
+    </section>						
+    <section class="related-products related">
+    <h3>Related Products</h3>
+        <div class="row p50 related-products-wrapper no-margin">
+            <div *ngFor="let p of products" class="col-md-3 col-sm-4 col-xs-6 product no-padding">
+                <div class="product-wrapper text-center">
+                    <img src={{p.img}} class="product-img">
+                    <div class="product-details">
+                        <div class="product-name">p.name</div>
+                        <div class="product-price">
+                            <span class="actual-price">{{p.price | currency}}</span>
+                            <span class="discounted-price">{{p.discount | currency}}</span></div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>    

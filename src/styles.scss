@@ -1,1 +1,77 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.min.css";
+@import "styles/variables.scss";
+
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+body {
+	background: $mainBgGrey;
+}
+.bg-white {
+	background: $white;
+}
+.no-margin {
+	margin: 0;
+}
+.no-padding {
+	padding: 0;
+}
+.p70 {
+	padding: 70px;
+}
+.p50 {
+	padding: 50px 0;
+}
+.p20 {
+	padding: 20px 0;
+}
+.p10 {
+	padding: 10px 0;
+}
+.ptb50 {
+    padding: 50px 0;
+}
+.mb25 {
+	margin-bottom: 25px;
+}
+.m50 {
+	margin: 50px 0;
+}
+.ml20 {
+	margin-left: 20px;	
+}
+.ml50 {
+	margin-left: 50px;	
+}
+.mlr50 {
+	margin: 0 50px;
+} 
+img {
+	max-width: 100%;
+}
+ul li {
+    font-size: $regularFont;
+    margin-right: 20px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: linear 0.3s;
+}
+button.btn.btn-md {
+	background: $mainBgYellow;
+	color: $white;    
+	font-size: $regularFont;
+    border-radius: 0px;
+    letter-spacing: 1px;
+    padding: 12px 30px;
+}
+.main, section.details {
+    margin-left: 50px;
+}
+.icons  {
+    font-size: 18px;
+    padding: 2px  6px;
+}

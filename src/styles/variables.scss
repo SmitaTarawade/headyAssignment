@@ -1,0 +1,17 @@
+
+$mainBgYellow : #FFD640;
+$mainBgGrey: #F0F0F0;
+$white: #fff;
+$black : #000;
+$borderBlack: #3333331f;
+$activeLinkFooter: #f6f6f691;
+$regularFont: 12px;
+$bigFont: 95px;
+$screenSize: 768px;
+
+@mixin border($direction,$size,$colour) {
+    border-#{$direction}: $size solid $colour;
+  }
+@mixin  activeLink($a, $b, $c, $d, $color) {
+    background: linear-gradient(to bottom, transparent $a,transparent $b,$color $c, $color $d);    
+}

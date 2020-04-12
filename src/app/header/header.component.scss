@@ -1,0 +1,75 @@
+@import "../../styles/variables.scss";
+
+header {
+    margin-left: 50px;
+    .top-menu {        
+	position: sticky;
+	padding: 15px 30px;
+    background: $white;    
+        .phone-menu {
+            margin: 18px 0; 
+            i {
+                font-size: 23px;
+            }
+        }
+    }
+    .top-links li{
+        margin-right: 30px;
+        &.active, &:hover {
+            @include activeLink(0%, 50%, 50%, 100%, $mainBgYellow);
+        }
+    }
+    .top-menu-wrapper {
+        padding: 20px 0 !important;
+    }
+    .menu-actions {
+        li i {
+            padding: 0 7px;        
+        }
+        .counter {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            color: $black;
+            background: $mainBgYellow;
+            border-radius: 50%;
+            top: 12px;
+            margin-left: 16px;
+            text-align: center;
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 20px;
+        }
+    }
+
+
+    ol.breadcrumb{
+        background: transparent;
+        padding-left: 0;
+        li {
+            a {
+                color: #ccc;
+                text-transform: uppercase;
+                font-size: 10px;
+                font-weight: 600;
+            }
+            i, &.active a {
+                color: #000;
+            }            
+        } 
+        li+li::before{
+            content: "\25b6" !important;
+            font-size: 7px;
+            color: $mainBgYellow !important;
+            margin: 0 7px;   
+        }    
+    }
+    @media screen and (max-width: $screenSize) {
+        margin-left: 0;
+        
+    }
+
+}
+
+
+

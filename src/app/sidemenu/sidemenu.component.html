@@ -1,0 +1,16 @@
+<div class="menu-pages p50">
+    <div class="heading d-none d-lg-block"><h1>{{heading | titlecase}}</h1></div>
+    <ul class="nav">
+        <li (click)="activeNav(1, $event.target.innerText)" [ngClass]="{'active': active == 1}" id="details">Details</li>
+        <li (click)="activeNav(2, $event.target.innerText)" [ngClass]="{'active': active == 2}" id="description">Description</li>
+        <li (click)="activeNav(3, $event.target.innerText)" [ngClass]="{'active': active == 3}" id="reviews">Reviews</li>
+        <li (click)="activeNav(4, $event.target.innerText)" [ngClass]="{'active': active == 4}" id="related">Related</li>
+        <li class="d-none d-md-block">
+            <ul class="list-inline no-margin social-icons">
+                <li class="list-inline-item"><i class="fa fa-facebook icons" aria-hidden="true"></i></li>
+                <li class="list-inline-item"><i class="fa fa-twitter icons" aria-hidden="true"></i></li>
+                <li class="list-inline-item"><i class="fa fa-pinterest icons" aria-hidden="true"></i></li>
+            </ul>
+        </li>
+    </ul>
+</div>
